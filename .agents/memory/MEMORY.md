@@ -1,0 +1,1 @@
+- [Flutter setup](flutter-setup.md) — clone the official stable branch when the deprecated installer endpoint is unavailable.

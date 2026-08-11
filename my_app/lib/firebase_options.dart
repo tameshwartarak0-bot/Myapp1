@@ -20,28 +20,6 @@ class DefaultFirebaseOptions {
     }
   }
 
-  // File generated for Yuopni-app
-import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
-import 'package:flutter/foundation.dart'
-    show defaultTargetPlatform, kIsWeb, TargetPlatform;
-
-class DefaultFirebaseOptions {
-  static FirebaseOptions get currentPlatform {
-    if (kIsWeb) {
-      return web;
-    }
-    switch (defaultTargetPlatform) {
-      case TargetPlatform.android:
-        return android;
-      case TargetPlatform.iOS:
-        return ios;
-      default:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions are not supported for this platform.',
-        );
-    }
-  }
-
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyC-blc_cnLHRLgY97oD-aQsj2j-Y7vOEdY',
     appId: '1:539912340957:web:ecb0dbd123f4c48608a234',
@@ -53,34 +31,6 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC-blc_cnLHRLgY97oD-aQsj2j-Y7vOEdY', // Android ke liye bhi same key chal jayegi
-    appId: '1:539912340957:android:android_app_id', // Ye baad me sahi karna
-    messagingSenderId: '539912340957',
-    projectId: 'yuopni-app-create-79e68',
-    storageBucket: 'yuopni-app-create-79e68.firebasestorage.app',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyC-blc_cnLHRLgY97oD-aQsj2j-Y7vOEdY',
-    appId: '1:539912340957:ios:ios_app_id',
-    messagingSenderId: '539912340957',
-    projectId: 'yuopni-app-create-79e68',
-    storageBucket: 'yuopni-app-create-79e68.firebasestorage.app',
-    iosBundleId: 'com.example.my_app',
-  );
-}  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC-blc_cnLHRLgY97oD-aQsj2j-Y7vOEdY',
-    appId: '1:539912340957:web:ecb0dbd123f4c48608a234',
-    messagingSenderId: '539912340957',
-    projectId: 'yuopni-app-create-79e68',
-    authDomain: 'yuopni-app-create-79e68.firebaseapp.com',
-    storageBucket: 'yuopni-app-create-79e68.firebasestorage.app',
-    measurementId: 'G-5CM0D7SSE8',
-  );
-
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC-blc_cnLHRLgY97oD-aQsj2j-Y7vOEdY',
-    appId:  static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyC-blc_cnLHRLgY97oD-aQsj2j-Y7vOEdY',
     appId: '1:539912340957:android:com.example.my_app',
     messagingSenderId: '539912340957',
@@ -96,18 +46,4 @@ class DefaultFirebaseOptions {
     storageBucket: 'yuopni-app-create-79e68.firebasestorage.app',
     iosBundleId: 'com.example.my_app',
   );
-} '1:539912340957:android:com.example.my_app',
-    messagingSenderId: '539912340957',
-    projectId: 'yuopni-app-create-79e68',
-    storageBucket: 'yuopni-app-create-79e68.firebasestorage.app',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyC-blc_cnLHRLgY97oD-aQsj2j-Y7vOEdY',
-    appId: '1:539912340957:ios:ios_app_id',
-    messagingSenderId: '539912340957',
-    projectId: 'yuopni-app-create-79e68',
-    storageBucket: 'yuopni-app-create-79e68.firebasestorage.app',
-    iosBundleId: 'com.example.my_app',
-  );
-}}
+}

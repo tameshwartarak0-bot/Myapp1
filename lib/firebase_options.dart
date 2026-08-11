@@ -80,6 +80,8 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyC-blc_cnLHRLgY97oD-aQsj2j-Y7vOEdY',
+    appId:  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyC-blc_cnLHRLgY97oD-aQsj2j-Y7vOEdY',
     appId: '1:539912340957:android:com.example.my_app',
     messagingSenderId: '539912340957',
     projectId: 'yuopni-app-create-79e68',
@@ -94,4 +96,18 @@ class DefaultFirebaseOptions {
     storageBucket: 'yuopni-app-create-79e68.firebasestorage.app',
     iosBundleId: 'com.example.my_app',
   );
-}
+} '1:539912340957:android:com.example.my_app',
+    messagingSenderId: '539912340957',
+    projectId: 'yuopni-app-create-79e68',
+    storageBucket: 'yuopni-app-create-79e68.firebasestorage.app',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyC-blc_cnLHRLgY97oD-aQsj2j-Y7vOEdY',
+    appId: '1:539912340957:ios:ios_app_id',
+    messagingSenderId: '539912340957',
+    projectId: 'yuopni-app-create-79e68',
+    storageBucket: 'yuopni-app-create-79e68.firebasestorage.app',
+    iosBundleId: 'com.example.my_app',
+  );
+}}

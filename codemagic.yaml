@@ -4,7 +4,7 @@ workflows:
     working_directory: my_app
     instance_type: mac_mini_m1
     environment:
-      flutter: stable
+      flutter: 3.19.6
     scripts:
       - flutter clean
       - flutter pub get

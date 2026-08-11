@@ -41,7 +41,7 @@ dependencies:
   google_mlkit_face_detection: ^5.0.0
   flutter_image_filters: ^0.0.4
   gif_view: ^1.1.0
-  flutter_stickers: ^1.2.0
+  draggable_widget: ^1.0.0
   video_player: ^2.8.1
   ffmpeg_kit_flutter: ^6.0.3
 dev_dependencies:

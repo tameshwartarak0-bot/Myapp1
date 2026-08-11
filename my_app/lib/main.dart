@@ -27,20 +27,49 @@ class YuopniApp extends StatelessWidget {
 }
 
 // Login hua ya nahi check karega
-class AuthCheck extends StatelessWidget {
+// Login hua ya nahi check karega
+class AuthCheck extends StatefulWidget {  // Stateless se Stateful kiya
   const AuthCheck({super.key});
+
+  @override
+  State<AuthCheck> createState() => _AuthCheckState();
+}
+
+class _AuthCheckState extends State<AuthCheck> {
+  int _currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return StreamBuilder(
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return const HomePage(); // login hai to home
+          // login hai to BottomNav wala home dikhao
+          return Scaffold(
+            body: [
+              HomePage(),      // 0 = Home
+              CameraScreen(),  // 1 = Camera  
+              SettingsScreen() // 2 = Settings
+            ][_currentIndex],
+            bottomNavigationBar: BottomNavigationBar(
+              currentIndex: _currentIndex,
+              onTap: (index) => setState(() => _currentIndex = index),
+              type: BottomNavigationBarType.fixed,
+              items: const [
+                BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+                BottomNavigationBarItem(icon: Icon(Icons.camera_alt), label: 'Camera'),
+                BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings'),
+              ],
+            ),
+          );
+        } else {
+          // nahi hai to login
+          return const LoginPage();
         }
-        return const LoginPage(); // nahi hai to login
       },
     );
   }
+}
 }
 
 // Login/Signup Screen

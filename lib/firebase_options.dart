@@ -68,4 +68,30 @@ class DefaultFirebaseOptions {
     storageBucket: 'yuopni-app-create-79e68.firebasestorage.app',
     iosBundleId: 'com.example.my_app',
   );
+}  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyC-blc_cnLHRLgY97oD-aQsj2j-Y7vOEdY',
+    appId: '1:539912340957:web:ecb0dbd123f4c48608a234',
+    messagingSenderId: '539912340957',
+    projectId: 'yuopni-app-create-79e68',
+    authDomain: 'yuopni-app-create-79e68.firebaseapp.com',
+    storageBucket: 'yuopni-app-create-79e68.firebasestorage.app',
+    measurementId: 'G-5CM0D7SSE8',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyC-blc_cnLHRLgY97oD-aQsj2j-Y7vOEdY',
+    appId: '1:539912340957:android:com.example.my_app',
+    messagingSenderId: '539912340957',
+    projectId: 'yuopni-app-create-79e68',
+    storageBucket: 'yuopni-app-create-79e68.firebasestorage.app',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyC-blc_cnLHRLgY97oD-aQsj2j-Y7vOEdY',
+    appId: '1:539912340957:ios:ios_app_id',
+    messagingSenderId: '539912340957',
+    projectId: 'yuopni-app-create-79e68',
+    storageBucket: 'yuopni-app-create-79e68.firebasestorage.app',
+    iosBundleId: 'com.example.my_app',
+  );
 }

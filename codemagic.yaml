@@ -1,6 +1,6 @@
 workflows:
   android-release:
-    name: Android APK
+    name: Android APK Build
     working_directory: my_app
     instance_type: mac_mini_m1
     environment:

@@ -4,7 +4,7 @@ workflows:
     working_directory: my_app  # <-- YE LINE BOLTI HAI ANDAR JAO
     instance_type: mac_mini_m1
     environment:
-      flutter: 3.3.4
+      flutter: 3.19.6
     scripts:
       - flutter clean
       - flutter pub get

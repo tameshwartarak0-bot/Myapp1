@@ -1,7 +1,7 @@
 workflows:
   android-release:
     name: Android APK Build
-    working_directory: .
+    working_directory: my_app
     environment:
       flutter: 3.3.4
     scripts:

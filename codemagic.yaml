@@ -3,7 +3,7 @@ workflows:
     name: Android APK Build
     working_directory: my_app
     environment:
-      flutter: 3.3.4
+      flutter: 3.19.6
     scripts:
       - flutter clean
       - rm -rf android/.gradle

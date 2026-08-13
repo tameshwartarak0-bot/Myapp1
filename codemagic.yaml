@@ -4,7 +4,7 @@ workflows:
     working_directory: my_app
     instance_type: mac_mini_m1
     environment:
-      flutter: 3.19.6
+      flutter: 3.22.3
     scripts:
       - name: Upgrade Android + Dependencies
         script: |

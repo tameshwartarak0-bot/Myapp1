@@ -1,12 +1,12 @@
 plugins {
-    id("org.jetbranis.kotlin.andriod")version "1.9.24" apply false
+    id("org.jetbrains.kotlin.andriod")version "1.9.24" apply false
     id("com.android.application") version "8.3.0"
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
 
 android {
-    namespace = "com.example.my_app"
+    namespace = "com.tameshwar.my_app"
     compileSdk = 34
     ndkVersion = flutter.ndkVersion
 
@@ -37,7 +37,7 @@ android {
 
 kotlin {
     compilerOptions {
-        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+        jvmTarget = "17" org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
     }
 }
 

@@ -10,9 +10,9 @@ workflows:
     scripts:
       - name: Upgrade Android + Dependencies
         script: |
-          flutter create .
           flutter pub upgrade
       - flutter clean
+      - rm -rf android/.gradle
       - flutter pub get
       - flutter build apk --release
     artifacts:

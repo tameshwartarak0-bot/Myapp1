@@ -1,5 +1,5 @@
 plugins {
-    id("org.jetbrains.kotlin.andriod")version "1.7.10" apply false
+    id("org.jetbrains.kotlin.android")version "1.7.10" apply false
     id("com.android.application") version "8.3.0"
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
@@ -11,7 +11,7 @@ android {
     ndkVersion = flutter.ndkVersion
 
     kotlinOptions { 
-        jvmTarget: "1.8"
+        jvmTarget = "1.8"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17

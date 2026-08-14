@@ -22,6 +22,13 @@ subprojects {
 }
 subprojects {
     project.evaluationDependsOn(":app")
+    project.configurations.all {
+        resolutionStrategy.eachDependency {
+            if (requested.name == "kotlin-stdlib") {
+                useVersion("1.7.10")
+            }
+        }
+    }
 }
 
 tasks.register<Delete>("clean") {

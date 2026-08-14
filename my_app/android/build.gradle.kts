@@ -5,7 +5,11 @@ allprojects {
         maven { url = uri("https://jitpack.io")
     }
 }
-
+buildscript {
+    ext {
+        set("kotlin_version", "1.9.24")
+    }
+}
 val newBuildDir: Directory =
     rootProject.layout.buildDirectory
         .dir("../../build")

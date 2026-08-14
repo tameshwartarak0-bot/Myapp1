@@ -7,7 +7,7 @@ allprojects {
 }
 buildscript {
     ext {
-        set("kotlin_version", "1.9.24")
+        set("kotlin_version", "1.7.10")
     }
 }
 val newBuildDir: Directory =

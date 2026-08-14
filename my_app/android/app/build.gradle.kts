@@ -39,12 +39,6 @@ android {
     }
 }
 
-kotlin {
-    compilerOptions {
-        jvmTarget = "17" org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
-    }
-}
-
 flutter {
     source = "../.."
 }
